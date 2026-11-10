@@ -1,5 +1,5 @@
 
-# FinAlert
+# 🏦 FinAlert App
 
 **Report ATM failures in seconds. Fix them faster.**
 
@@ -7,7 +7,7 @@ A React Native mobile app that connects bank customers and technicians through o
 
 ---
 
-## Overview
+## 📋 Overview
 
 When an ATM swallows a card or stops dispensing cash, the customer standing in front of it usually has no quick way to tell the bank. FinAlert closes that gap.
 
@@ -17,7 +17,7 @@ When an ATM swallows a card or stops dispensing cash, the customer standing in f
 
 The mobile app (`app/`) talks to a Node.js + Express + MongoDB REST API (`backend/`).
 
-## Features
+## ✨ Features
 
 | Area | What you get |
 |------|--------------|
@@ -30,7 +30,7 @@ The mobile app (`app/`) talks to a Node.js + Express + MongoDB REST API (`backen
 | **Secure sessions** | JWT stored in the device's secure storage (Keychain / Keystore). Expired sessions return to the sign-in screen. |
 | **Cross-platform** | One codebase for Android, iOS and web. |
 
-## Roles and permissions
+## 👥 Roles and permissions
 
 | Role | View failures | Start / resolve | Delete failures | Manage users |
 |------|:---:|:---:|:---:|:---:|
@@ -41,7 +41,7 @@ The mobile app (`app/`) talks to a Node.js + Express + MongoDB REST API (`backen
 
 Reporting a failure needs no account at all.
 
-## Tech stack
+## 📦 Tech stack
 
 **Mobile app**
 - React Native with [Expo](https://expo.dev)
@@ -53,7 +53,7 @@ Reporting a failure needs no account at all.
 - MongoDB with Mongoose
 - JSON Web Tokens, bcryptjs password hashing
 
-## Project structure
+## 📋 Project structure
 
 ```
 FinAlert/
@@ -76,7 +76,7 @@ FinAlert/
 
 ## Getting started
 
-### Prerequisites
+### 🚀 Prerequisites
 
 - [Node.js](https://nodejs.org) 18 or newer
 - [MongoDB](https://www.mongodb.com/try/download/community) running locally, or a MongoDB Atlas connection string
@@ -135,7 +135,7 @@ Invoke-RestMethod -Uri http://localhost:5000/admin/auth/register -Method Post -C
 
 Open the **Staff** tab in the app and sign in with those details. From then on you can add technicians, admins and viewers from the **Users** tab.
 
-## Configuration
+## ⚙️ Configuration
 
 ### Pointing the app at your API
 
@@ -149,7 +149,7 @@ or set `expo.extra.apiUrl` in `app/app.json`.
 
 The URL is resolved in this order: `EXPO_PUBLIC_API_URL` → `app.json` extra → the Expo host machine → `10.0.2.2` (Android emulator) or `localhost`.
 
-## API endpoints used
+## 📚 API endpoints
 
 | Method | Endpoint | Access | Purpose |
 |--------|----------|--------|---------|
@@ -174,7 +174,7 @@ eas build --platform android      # or ios
 
 For a real release, host the backend over **HTTPS** and set `EXPO_PUBLIC_API_URL` to it. `app.json` currently allows plain HTTP on Android so local testing works. Remove the `usesCleartextTraffic` setting once you are on HTTPS.
 
-## Troubleshooting
+## 🔐 Troubleshooting
 
 | Problem | Fix |
 |---------|-----|
@@ -184,7 +184,7 @@ For a real release, host the backend over **HTTPS** and set `EXPO_PUBLIC_API_URL
 | Buttons do nothing in the browser | Use the latest version of the app. Older builds used native-only pop-ups. |
 | Changes don't show up | Stop Expo and run `npx expo start -c` to clear the cache. |
 
-## Roadmap
+## 🚀 Roadmap
 
 - Push notifications when a new failure is reported
 - ATM location and map view
@@ -193,8 +193,8 @@ For a real release, host the backend over **HTTPS** and set `EXPO_PUBLIC_API_URL
 - Assigning a failure to a specific technician
 
 
-## License
+## 📝 License
 
-- This Bank ATM Failure Solver System Created by **N P Joseph.**
+- This FinAlert App Created by **N P Joseph.**
 - © 2026 Bank Management System. All rights reserved.
 
