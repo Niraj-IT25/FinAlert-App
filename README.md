@@ -195,4 +195,6 @@ For a real release, host the backend over **HTTPS** and set `EXPO_PUBLIC_API_URL
 
 ## License
 
-Distributed under the MIT License. See `LICENSE` for details.
+- This Bank ATM Failure Solver System Created by **N P Joseph.**
+- © 2026 Bank Management System. All rights reserved.
+
