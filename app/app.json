@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "FinAlert",
+    "slug": "finalert",
+    "scheme": "finalert",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#14213D"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.finalert.app"
+    },
+    "android": {
+      "package": "com.finalert.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#14213D",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-secure-store",
+      [
+        "expo-build-properties",
+        {
+          "android": { "usesCleartextTraffic": true }
+        }
+      ]
+    ],
+    "extra": {
+      "apiUrl": ""
+    }
+  }
+}
